@@ -1,0 +1,3 @@
+﻿- Docker Notes
+	* docker start $(docker ps -aq)
+	* docker exec -it CONTINER_ID

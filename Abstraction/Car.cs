@@ -1,10 +1,11 @@
-﻿using System;
+﻿using DesignPattern.Encapsulation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern
+namespace DesignPattern.Abstraction
 {
     abstract class Car
     {
@@ -38,7 +39,7 @@ namespace DesignPattern
         {
             if (!String.IsNullOrWhiteSpace(Dashboard.ReadDashboard()))
             {
-                return $"The Speed {this.speed} \n More Info ...\n {Dashboard.ReadDashboard()}";
+                return $" The Speed {this.speed} \n More Info ...\n{Dashboard.ReadDashboard()}";
             }
             else
             {

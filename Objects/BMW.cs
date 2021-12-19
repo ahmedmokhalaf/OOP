@@ -1,10 +1,11 @@
-﻿using System;
+﻿using DesignPattern.Abstraction;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern
+namespace DesignPattern.Objects
 {
     class BMW : Car
     {

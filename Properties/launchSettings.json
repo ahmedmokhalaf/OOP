@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DesignPattern": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
