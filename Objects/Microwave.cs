@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPattern.Objects
+﻿namespace DesignPattern.Objects
 {
     public class Microwave
     {
@@ -12,7 +6,7 @@ namespace DesignPattern.Objects
         private string program;
         private int time;
 
-        public Microwave(int _temp , string _program, int _time)
+        public Microwave(int _temp, string _program, int _time)
         {
             temp = _temp;
             program = _program;

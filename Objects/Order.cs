@@ -1,10 +1,5 @@
 ﻿using DesignPattern.Abstraction;
 using DesignPattern.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPattern.Objects
 {
@@ -29,7 +24,9 @@ namespace DesignPattern.Objects
             car.Park();
             car.TurnOFF();
 
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
             WeightHolder weightHolder = car as WeightHolder;
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
             if (weightHolder != null)
             {
                 weightHolder.LeftCargo();

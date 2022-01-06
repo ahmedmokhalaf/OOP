@@ -1,22 +1,19 @@
 ﻿using DesignPattern.Encapsulation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPattern.Abstraction
 {
     abstract class Car
     {
-        protected int     speed;
-        protected int     numberOfDoors;
-        protected string  gearBoxSystem;
-        protected string  color;
+        protected int speed;
+        protected int numberOfDoors;
+        protected string gearBoxSystem;
+        protected string color;
         protected bool TurnStatus = false;
         private CarDashboard Dashboard;
 
+#pragma warning disable CS8618 // Non-nullable field 'Dashboard' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.
         protected Car(
+#pragma warning restore CS8618 // Non-nullable field 'Dashboard' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.
             int speed, int numberOfDoors, string gearBoxSystem, string color)
         {
             this.speed = speed;

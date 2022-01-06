@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPattern.Relationship
+﻿namespace DesignPattern.Relationship
 {
     class Student
     {
@@ -12,7 +6,9 @@ namespace DesignPattern.Relationship
         private string HomeWorke;
         protected int HomeWorkScore;
 
+#pragma warning disable CS8618 // Non-nullable field 'HomeWorke' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.
         public Student(string name)
+#pragma warning restore CS8618 // Non-nullable field 'HomeWorke' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.
         {
             Name = name;
         }
@@ -27,7 +23,7 @@ namespace DesignPattern.Relationship
         }
         public void AssignATempTeacher(Teacher teacher)
         {
-            HomeWorkScore = new Random().Next(20,60);
+            HomeWorkScore = new Random().Next(20, 60);
             HomeWorke = teacher.AssignAHomeWork();
         }
 

@@ -1,3 +1,14 @@
 ﻿- Docker Notes
 	* docker start $(docker ps -aq)
 	* docker exec -it CONTINER_ID
+
+
+=== Association 
+كل كلاس مختص بنفسه و غير معتمد علي الاخر و من الممكن ان يستعينوا بخدمات بعض .
+=== Aggregation
+يكون الكلاس المتحكم في ما يتبعه من كلاسات
+***************************************************************************
+مشكلة 
+		insert object multi time 
+	الحل
+		HashSet

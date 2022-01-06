@@ -1,9 +1,4 @@
 ﻿using DesignPattern.Abstraction;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPattern.Objects
 {
@@ -13,7 +8,7 @@ namespace DesignPattern.Objects
         {
         }
 
-        
+
 
         public override bool Accelerate(int speed)
         {
