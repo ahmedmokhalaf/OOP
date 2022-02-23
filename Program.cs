@@ -136,5 +136,4 @@ Console.WriteLine("====================================== *** END *** ==========
 Console.ResetColor();
 Console.OutputEncoding = Encoding.UTF8;
 
-Console.WriteLine("الحمد لله ");
 Console.ReadLine();
